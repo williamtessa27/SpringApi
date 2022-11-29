@@ -13,6 +13,7 @@ class ProductsapiApplicationTests {
     void testGetProduct() {
         RestTemplate restTemplate = new RestTemplate();
         Production production = restTemplate.getForObject("http://localhost:8080/api/products/1", Production.class);
+
     }
 
 }
